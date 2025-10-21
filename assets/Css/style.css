@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex-grow: 1; 
+}
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size: cover;
+    background-position: center;
+}
+
+.about-hero h1 {
+    font-weight: 700;
+}
+
+.info-section {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    height: 100%; 
+}
+
+.info-box ul {
+    padding-right: 1.2rem; 
+}
+
+.contact-form-wrapper {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+/*problem here ? */
+
+html, body {
+    height: 100%; 
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+}
+
+main {
+    flex-grow: 1; 
+}
