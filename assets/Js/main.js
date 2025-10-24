@@ -60,3 +60,85 @@ document.addEventListener('DOMContentLoaded', function() {
         const alertHTML = `<div class="alert alert-${type}" role="alert">${message}</div>`;
         formMessage.innerHTML = alertHTML;
     }
+  
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const bodyElement = document.body;
+
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            bodyElement.classList.add('dark-mode');
+            themeToggleButton.textContent = '☀️'; 
+            localStorage.setItem('theme', 'dark'); 
+        } else {
+            bodyElement.classList.remove('dark-mode');
+            themeToggleButton.textContent = '🌙'; 
+            localStorage.setItem('theme', 'light'); 
+        }
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme === 'dark' ? 'dark' : 'light'); 
+
+    if (themeToggleButton) {
+        themeToggleButton.addEventListener('click', function() {
+            const isDarkMode = bodyElement.classList.contains('dark-mode');
+            applyTheme(isDarkMode ? 'light' : 'dark'); 
+        });
+    }
+
+
+    const langToggleButton = document.getElementById('lang-toggle');
+    const htmlElement = document.documentElement; 
+    const translatableElements = document.querySelectorAll('[data-key]'); 
+    function setLanguage(lang) {
+        if (!translations[lang]) {
+            console.error("Language not found in translations:", lang);
+            return; 
+        }
+
+        htmlElement.setAttribute('lang', lang);
+        htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+        translatableElements.forEach(element => {
+            const key = element.getAttribute('data-key');
+            if (translations[lang][key]) {
+                element.innerHTML = translations[lang][key]; 
+            } else {
+                console.warn(`Translation key "${key}" not found for language "${lang}".`);
+            }
+        });
+        langToggleButton.textContent = lang === 'ar' ? 'EN' : 'AR';
+
+        localStorage.setItem('language', lang);
+        const titleElement = document.querySelector('title[data-key]');
+        if (titleElement) {
+             const titleKey = titleElement.getAttribute('data-key');
+             if(translations[lang][titleKey]) {
+                document.title = translations[lang][titleKey];
+             }
+        }
+    }
+
+    const savedLanguage = localStorage.getItem('language');
+    setLanguage(savedLanguage === 'en' ? 'en' : 'ar');
+
+    if (langToggleButton) {
+        langToggleButton.addEventListener('click', function() {
+            const currentLang = htmlElement.getAttribute('lang');
+            setLanguage(currentLang === 'ar' ? 'en' : 'ar');
+        });
+    }
+    function showAlert(messageKey, type) {
+        const currentLang = localStorage.getItem('language') || 'ar'; 
+        let message = translations[currentLang][messageKey]; 
+
+        if (!message) {
+            console.error(`Alert message key "${messageKey}" not found for language "${currentLang}".`);
+            message = messageKey; 
+        }
+
+        const alertHTML = `<div class="alert alert-${type}" role="alert">${message}</div>`;
+        if (formMessage) { 
+           formMessage.innerHTML = alertHTML;
+        }
+    }

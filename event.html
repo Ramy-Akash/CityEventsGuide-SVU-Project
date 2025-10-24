@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفاصيل الفعالية - معرض الفن الحديث</title>
+    <title data-key="eventPageTitle">تفاصيل الفعالية - معرض الفن الحديث</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -14,28 +14,38 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+                
+                <a class="navbar-brand" href="index.html" data-key="navBrand">دليل الفعاليات</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
+                            <a class="nav-link active" href="index.html" data-key="navHome">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">كل الفعاليات</a>
+                            <a class="nav-link" href="events.html" data-key="navEvents">كل الفعاليات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">عن الدليل</a>
+                            <a class="nav-link" href="about.html" data-key="navAbout">عن الدليل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link" href="contact.html" data-key="navContact">اتصل بنا</a>
                         </li>
                     </ul>
                 </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                </ul>
+            <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
+            <button id="lang-toggle" class="btn btn-outline-light ms-2">EN</button>
             </div>
-        </nav>
+            
+    </div>
+</nav>
+            </div>
+        
     </header>
 
     <main>
@@ -43,33 +53,33 @@
             <div class="row">
                 <div class="col-lg-8">
                     <article>
-                        <h1 class="mb-3">معرض الفن الحديث</h1>
+                        <h1 class="mb-3" data-key="eventCardTitle">معرض الفن الحديث</h1>
                         <div class="d-flex align-items-center text-muted mb-4">
-                            <span><strong>التاريخ:</strong> 25 أكتوبر 2025</span>
+                            <span data-key="eventCardDate"><strong>التاريخ:</strong> 25 أكتوبر 2025</span>
                             <span class="mx-3">|</span>
-                            <span><strong>المكان:</strong> قاعة الفنون</span>
+                            <span data-key="eventCardLocation"><strong>المكان:</strong> قاعة الفنون</span>
                         </div>
                         
-                        <img src="assets/img/latest1.jpg" class="img-fluid rounded mb-4" alt="صورة رئيسية للمعرض">
+                        <img src="assets/img/latest1.jpg" class="img-fluid rounded mb-4" >
 
-                        <h3>وصف كامل للفعالية</h3>
-                        <p>
+                        <h3 data-key="eventCardFullDescTitle">وصف كامل للفعالية</h3>
+                        <p data-key="eventCardFullDesc1">
                             انغمس في عالم الإبداع المعاصر في معرض الفن الحديث السنوي. يضم المعرض مجموعة منتقاة من الأعمال الفنية التي تتنوع بين اللوحات والمنحوتات والفن التركيبي، مقدمة من قبل فنانين واعدين ومخضرمين من الساحة المحلية والعالمية.
                         </p>
-                        <p>
+                        <p data-key="eventCardFullDesc2">
                             تعتبر هذه الفعالية فرصة فريدة للتفاعل مع الفن الحديث وفهم الاتجاهات الجديدة في التعبير البصري. ستقام على هامش المعرض جلسات حوارية مع الفنانين المشاركين وورش عمل فنية تفاعلية.
                         </p>
                         
-                        <h4 class="mt-5 mb-3">معرض صور صغير</h4>
+                        <h4 class="mt-5 mb-3"data-key="eventCardImgLib"> معرض صور صغير :</h4>
                         <div class="row g-3">
                             <div class="col-md-4">
-                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded" alt="صورة من المعرض">
+                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded">
                             </div>
                             <div class="col-md-4">
-                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded" alt="صورة من المعرض">
+                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded" >
                             </div>
                             <div class="col-md-4">
-                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded" alt="صورة من المعرض">
+                                <img src="assets/img/gallery1.jpg" class="img-fluid rounded">
                             </div>
                         </div>
                     </article>
@@ -77,13 +87,13 @@
 
                 <div class="col-lg-4">
                     <div class="card sticky-top" style="top: 20px;">
-                        <img src="assets/img/static-map.png" class="card-img-top" alt="خريطة ثابتة للموقع">
+                        <img src="assets/img/static-map.png" class="card-img-top" >
                         <div class="card-body">
-                            <h5 class="card-title">الموقع</h5>
-                            <p class="card-text">دمشق الامويين دار الاوبرا.</p>
+                            <h5 class="card-title" data-key="gps">الموقع</h5>
+                            <p class="card-text" data-key="gpsDetails">دمشق الامويين دار الاوبرا.</p>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-success">أضف للتقويم</button>
-                                <button class="btn btn-info">شارك الفعالية</button>
+                                <button class="btn btn-success" data-key="gpsBtn1">أضف للتقويم</button>
+                                <button class="btn btn-info" data-key="gpsBtn2">شارك الفعالية</button>
                             </div>
                         </div>
                     </div>
@@ -92,32 +102,32 @@
 
             <hr class="my-5">
             <section>
-                <h2 class="text-center mb-4">فعاليات ذات صلة</h2>
+                <h2 class="text-center mb-4" data-key="eventRelatedTitle">فعاليات ذات صلة</h2>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">أمسية شعرية</h5>
-                                <p class="card-text text-muted small">10 نوفمبر 2025</p>
-                                <a href="events.html" class="btn btn-sm btn-outline-primary">المزيد</a>
+                                <h5 class="card-title" data-key="eventRelated1Title">أمسية شعرية</h5>
+                                <p class="card-text text-muted small" data-key="eventRelated1Date">10 نوفمبر 2025</p>
+                                <a href="events.html" class="btn btn-sm btn-outline-primary" data-key="eventMoreBtn">المزيد</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">ورشة الخط العربي</h5>
-                                <p class="card-text text-muted small">12 نوفمبر 2025</p>
-                                <a href="events.html" class="btn btn-sm btn-outline-primary">المزيد</a>
+                                <h5 class="card-title" data-key="eventRelated2Title">ورشة الخط العربي</h5>
+                                <p class="card-text text-muted small" data-key="eventRelated2Date">12 نوفمبر 2025</p>
+                                <a href="events.html" class="btn btn-sm btn-outline-primary" data-key="eventMoreBtn">المزيد</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">معرض الكتاب السنوي</h5>
-                                <p class="card-text text-muted small">05 ديسمبر 2025</p>
-                                <a href="events.html" class="btn btn-sm btn-outline-primary">المزيد</a>
+                                <h5 class="card-title" data-key="eventRelated3Title">معرض الكتاب السنوي</h5>
+                                <p class="card-text text-muted small" data-key="eventRelated3Date">05 ديسمبر 2025</p>
+                                <a href="events.html" class="btn btn-sm btn-outline-primary" data-key="eventMoreBtn" >المزيد</a>
                             </div>
                         </div>
                     </div>
@@ -128,12 +138,17 @@
 
     <footer class="bg-dark text-white text-center p-4 mt-5">
         <div class="container">
-            <p>&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <p data-key="footerContact">معلومات التواصل | روابط سوشيال ميديا</p>
+            <p class="mb-0" data-key="footerRights">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <div class="mt-3">
+                <p data-key="footerParticipationTitle"><strong> صاحب المشروع :</strong></p>
+                <p data-key="footerParticipationName">رامي عكش - ramy_282954</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="assets/js/translation.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

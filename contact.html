@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل فعاليات المدينة - اتصل بنا</title>
+    <title data-key="contactPageTitle">دليل فعاليات المدينة - اتصل بنا</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -11,57 +11,60 @@
 </head>
 <body>
 
-<div class="site-wrapper">
-        <header>
+<div class="site-wrapper"> 
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+                <a class="navbar-brand" href="index.html" data-key="navBrand">دليل الفعاليات</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
+                            <a class="nav-link" href="index.html" data-key="navHome">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">كل الفعاليات</a>
+                            <a class="nav-link" href="events.html" data-key="navEvents">كل الفعاليات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">عن الدليل</a>
+                            <a class="nav-link" href="about.html" data-key="navAbout">عن الدليل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link active" href="contact.html" data-key="navContact">اتصل بنا</a>
                         </li>
                     </ul>
+                    <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
+                    <button id="lang-toggle" class="btn btn-outline-light ms-2">EN</button>
                 </div>
+
             </div>
         </nav>
     </header>
 
-    <main id="conatct-main" class="hhh">
+    <main>
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form-wrapper p-4 p-md-5">
-                        <h1 class="text-center mb-4">تواصل معنا</h1>
+                        <h1 class="text-center mb-4" data-key="contactTitle">تواصل معنا</h1>
                         
                         <div id="form-message" class="mb-3"></div>
 
                         <form id="contact-form" novalidate>
                             <div class="mb-3">
-                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <label for="name" class="form-label" data-key="contactFN">الاسم الكامل</label>
                                 <input type="text" class="form-control" id="name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <label for="email" class="form-label" data-key="contactLn">البريد الإلكتروني</label>
                                 <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label">رسالتك</label>
+                                <label for="message" class="form-label" data-key="contactMsg">رسالتك</label>
                                 <textarea class="form-control" id="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+                            <button type="submit" class="btn btn-primary w-100" data-key="contactSubmitButton">إرسال الرسالة</button>
                         </form>
                     </div>
                 </div>
@@ -69,15 +72,20 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center p-5 mt-4">
+    <footer class="bg-dark text-white text-center p-4 mt-5">
         <div class="container">
-            <p>&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <p data-key="footerContact">معلومات التواصل | روابط سوشيال ميديا</p>
+            <p class="mb-0" data-key="footerRights">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <div class="mt-3">
+                <p data-key="footerParticipationTitle"><strong> صاحب المشروع :</strong></p>
+                <p data-key="footerParticipationName">رامي عكش - ramy_282954</p>
+            </div>
         </div>
     </footer>
+</div> 
 
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="assets/js/translation.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

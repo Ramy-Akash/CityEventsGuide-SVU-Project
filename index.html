@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل فعاليات المدينة - الرئيسية</title>
+    <title data-key="mainPageTitle">دليل فعاليات المدينة - الرئيسية</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,52 +14,62 @@
 <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+                
+                <a class="navbar-brand" href="index.html" data-key="navBrand">دليل الفعاليات</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                            <a class="nav-link active" href="index.html" data-key="navHome">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">كل الفعاليات</a>
+                            <a class="nav-link" href="events.html" data-key="navEvents">كل الفعاليات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">عن الدليل</a>
+                            <a class="nav-link" href="about.html" data-key="navAbout">عن الدليل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link" href="contact.html" data-key="navContact">اتصل بنا</a>
                         </li>
                     </ul>
                 </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                </ul>
+            <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
+            <button id="lang-toggle" class="btn btn-outline-light ms-2">EN</button>
             </div>
-        </nav>
+            
+    </div>
+</nav>
+            </div>
+        
 </header>
 
 <main>
 
     <section class="container mt-5">
-            <h2 class="text-center mb-4">فعاليات بارزة هذا الأسبوع</h2>
+            <h2 class="text-center mb-4" data-key="featuredTitle">فعاليات بارزة هذا الأسبوع</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card flex-md-row">
-                        <img src="assets/img/featured1.jpg" class="img-fluid" style="width: 200px; object-fit: cover;" alt="حفل موسيقي">
+                        <img src="assets/img/featured1.jpg" class="img-fluid" style="width: 200px; object-fit: cover;" >
                         <div class="card-body">
-                            <h5 class="card-title">حفل موسيقي كلاسيكي</h5>
-                            <p class="card-text">أمسية ساحرة مع عازفي البيانو والغيتار.</p>
-                            <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                            <h5 class="card-title" data-key="featuredEvent1Title">حفل موسيقي كلاسيكي</h5>
+                            <p class="card-text" data-key="featuredEvent1Desc">أمسية ساحرة مع عازفي البيانو والغيتار.</p>
+                            <a href="event.html" class="btn btn-sm btn-outline-primary" data-key="detailsBtn">التفاصيل</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card flex-md-row">
-                        <img src="assets/img/featured2.jpg" class="img-fluid" style="width: 200px; object-fit: cover;" alt="مهرجان طعام">
+                        <img src="assets/img/featured2.jpg" class="img-fluid" style="width: 200px; object-fit: cover;" >
                         <div class="card-body">
-                            <h5 class="card-title">مهرجان الطعام الشعبي</h5>
-                            <p class="card-text">تذوق أشهى المأكولات التقليدية الشامية.</p>
-                            <a href="event.html" class="btn btn-sm btn-outline-primary">التفاصيل</a>
+                            <h5 class="card-title" data-key="featuredEvent2Title">مهرجان الطعام الشعبي</h5>
+                            <p class="card-text" data-key="featuredEvent2Desc">تذوق أشهى المأكولات التقليدية الشامية.</p>
+                            <a href="event.html" class="btn btn-sm btn-outline-primary" data-key="detailsBtn">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -68,48 +78,48 @@
 
     <section class="py-4 bg-light">
             <div class="container text-center">
-                <h3 class="mb-3">تصفح حسب التصنيف</h3>
-                <a href="events.html" class="btn btn-primary m-1">ثقافة</a>
-                <a href="events.html" class="btn btn-success m-1">رياضة</a>
-                <a href="events.html" class="btn btn-danger m-1">موسيقى</a>
-                <a href="events.html" class="btn btn-warning m-1">عائلي</a>
-                <a href="events.html" class="btn btn-info m-1">ورش عمل</a>
+                <h3 class="mb-3" data-key="categoriesTitle">تصفح حسب التصنيف</h3>
+                <a href="events.html" class="btn btn-primary m-1" data-key="catCulture">ثقافة</a>
+                <a href="events.html" class="btn btn-success m-1" data-key="catSports">رياضة</a>
+                <a href="events.html" class="btn btn-danger m-1" data-key="catMusic">موسيقى</a>
+                <a href="events.html" class="btn btn-warning m-1" data-key="catFamily">عائلي</a>
+                <a href="events.html" class="btn btn-info m-1" data-key="catWorkshops">ورش عمل</a>
             </div>
     </section>
 
     <section class="container mt-5">
-            <h2 class="text-center mb-4">أحدث الفعاليات</h2>
+            <h2 class="text-center mb-4" data-key="latestTitle">أحدث الفعاليات</h2>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img src="assets/img/latest1.jpg" class="card-img-top" alt="معرض فني">
+                        <img src="assets/img/latest1.jpg" class="card-img-top">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">ثقافة</span>
-                            <h5 class="card-title">معرض الفن الحديث</h5>
-                            <p class="card-text text-muted">25 أكتوبر 2025 - قاعة الفنون</p>
-                            <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                            <span class="badge bg-primary mb-2" data-key="catCulture">ثقافة</span>
+                            <h5 class="card-title" data-key="latestEvent1Title">معرض الفن الحديث</h5>
+                            <p class="card-text text-muted" data-key="latestEvent1Date">25 أكتوبر 2025 - قاعة الفنون</p>
+                            <a href="event.html" class="btn btn-primary" data-key="detailsBtn">التفاصيل</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img src="assets/img/latest2.jpg" class="card-img-top" alt="سباق دراجات">
+                        <img src="assets/img/latest2.jpg" class="card-img-top" >
                         <div class="card-body">
-                            <span class="badge bg-success mb-2">رياضة</span>
-                            <h5 class="card-title">سباق الدراجات الجبلي</h5>
-                            <p class="card-text text-muted">28 أكتوبر 2025 - منتزه التل</p>
-                            <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                            <span class="badge bg-success mb-2" data-key="catSports">رياضة</span>
+                            <h5 class="card-title" data-key="latestEvent2Title">سباق الدراجات الجبلي</h5>
+                            <p class="card-text text-muted" data-key="latestEvent2Date">28 أكتوبر 2025 - منتزه التل</p>
+                            <a href="event.html" class="btn btn-primary" data-key="detailsBtn">التفاصيل</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img src="assets/img/latest3.jpg" class="card-img-top" alt="ورشة عمل للأطفال">
+                        <img src="assets/img/latest3.jpg" class="card-img-top" >
                         <div class="card-body">
-                            <span class="badge bg-warning mb-2">عائلي</span>
-                            <h5 class="card-title">ورشة صناعة الفخار للأطفال</h5>
-                            <p class="card-text text-muted">30 أكتوبر 2025 - مركز الأطفال</p>
-                            <a href="event.html" class="btn btn-primary">التفاصيل</a>
+                            <span class="badge bg-warning mb-2" data-key="catFamily">عائلي</span>
+                            <h5 class="card-title" data-key="latestEvent3Title">ورشة صناعة الفخار للأطفال</h5>
+                            <p class="card-text text-muted" data-key="latestEvent3Date">30 أكتوبر 2025 - مركز الأطفال</p>
+                            <a href="event.html" class="btn btn-primary" data-key="detailsBtn">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -120,17 +130,17 @@
     
     <footer class="bg-dark text-white text-center p-4 mt-5">
         <div class="container">
-            <p>معلومات التواصل | روابط سوشيال ميديا</p>
-            <p class="mb-0">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <p data-key="footerContact">معلومات التواصل | روابط سوشيال ميديا</p>
+            <p class="mb-0" data-key="footerRights">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
             <div class="mt-3">
-                <p><strong> صاحب المشروع :</strong></p>
-                <p>رامي عكش - ramy_282954</p>
+                <p data-key="footerParticipationTitle"><strong> صاحب المشروع :</strong></p>
+                <p data-key="footerParticipationName">رامي عكش - ramy_282954</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="assets/js/translation.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

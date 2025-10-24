@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفاصيل الفعالية - معرض الفن الحديث</title>
+    <title data-key="aboutPageTitle">تفاصيل الفعالية - معرض الفن الحديث</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -15,48 +15,58 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">دليل الفعاليات</a>
+                
+                <a class="navbar-brand" href="index.html" data-key="navBrand">دليل الفعاليات</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
+                            <a class="nav-link active" href="index.html" data-key="navHome">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">كل الفعاليات</a>
+                            <a class="nav-link" href="events.html" data-key="navEvents">كل الفعاليات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">عن الدليل</a>
+                            <a class="nav-link" href="about.html" data-key="navAbout">عن الدليل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            <a class="nav-link" href="contact.html" data-key="navContact">اتصل بنا</a>
                         </li>
                     </ul>
                 </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                </ul>
+            <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
+            <button id="lang-toggle" class="btn btn-outline-light ms-2">EN</button>
             </div>
-        </nav>
+            
+    </div>
+</nav>
+            </div>
+        
     </header>
 
     <main>
     <section class="about-hero text-center text-white py-5">
         <div class="container">
-            <h1 class="display-4">عن المشروع</h1>
-            <p class="lead">دليلك الأول لاكتشاف نبض المدينة وفعالياتها</p>
+            <h1 class="display-4" data-key="aboutTitle">عن المشروع</h1>
+            <p class="lead" data-key="aboutSubTitle">دليلك الأول لاكتشاف نبض المدينة وفعالياتها</p>
         </div>
     </section>
     
     <div class="container mt-5">
         <section class="row align-items-center mb-5">
             <div class="col-md-6">
-                <h2>الهدف من المشروع</h2>
-                <p>
-                    يهدف مشروع "دليل فعاليات المدينة" ليكون الجسر الذي يربط سكان المدينة وزوارها بأفضل الأنشطة والفعاليات. الرؤية هي خلق مجتمع أكثر تفاعلاً وحيوية من خلال تسهيل الوصول إلى التجارب الثقافية والرياضية والترفيهية. هذا المشروع هو تطبيق عملي لمفاهيم تطوير الويب باستخدام HTML, CSS, و JavaScript مع إطار العمل Bootstrap.
+                <h2 data-key="aboutPurpose">الهدف من المشروع</h2>
+                <p data-key="aboutPurposeSub">
+                    معرفة تواريخ و مواقع فعاليات المدينة وتصنيفاتها لتناسب جميع فئات المجتمع ونماذجه و مكوناته بالاضافة الى التعرف على تاريخ المدنية القديم والمعاصر
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="assets/img/about-us-image.jpg" class="img-fluid rounded shadow" alt="صورة تعبيرية عن المدينة">
+                <img src="assets/img/about-us-image.jpg" class="img-fluid rounded shadow">
             </div>
         </section>
         
@@ -66,22 +76,22 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="info-box p-4">
-                        <h4 class="mb-3">سياسات النشر</h4>
+                        <h4 class="mb-3" data-key="aboutPolicy">سياسات النشر</h4>
                         <ul>
-                            <li>يجب أن تكون الفعالية المقترحة عامة ومفتوحة للجمهور.</li>
-                            <li>يتم مراجعة جميع الفعاليات قبل نشرها للتأكد من ملاءمة المحتوى.</li>
-                            <li>نعطي الأولوية للفعاليات التي تدعم الثقافة والفن والمجتمع المحلي.</li>
+                            <li data-key="aboutPolicy1">يجب أن تكون الفعالية المقترحة عامة ومفتوحة للجمهور.</li>
+                            <li data-key="aboutPolicy2">يتم مراجعة جميع الفعاليات قبل نشرها للتأكد من ملاءمة المحتوى.</li>
+                            <li data-key="aboutPolicy3">نعطي الأولوية للفعاليات التي تدعم الثقافة والفن والمجتمع المحلي.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="info-box p-4">
-                        <h4 class="mb-3"> التقنيات المستخدمة في الموقع</h4>
+                        <h4 class="mb-3" data-key="aboutTec"> التقنيات المستخدمة في الموقع</h4>
                         <ul>
-                            <li><strong>HTML5:</strong> لهيكلة المحتوى بشكل دلالي.</li>
-                            <li><strong>CSS3:</strong> للتصميم المخصص والتجاوبية وتأثيرات الواجهة.</li>
-                            <li><strong>Bootstrap 5:</strong> لإطار العمل الشبكي والمكونات الجاهزة.</li>
-                            <li><strong>JavaScript (ES6):</strong> للتفاعلية والتحقق من النماذج.</li>
+                            <li data-key="aboutTec1"><strong>HTML5:</strong> لهيكلة المحتوى بشكل اشاسي.</li>
+                            <li data-key="aboutTec2"><strong>CSS3:</strong> للتصميم المخصص والتجاوبية .</li>
+                            <li data-key="aboutTec3"><strong>Bootstrap 5:</strong> إطار عمل للمكونات الجاهزة.</li>
+                            <li data-key="aboutTec4"><strong>JavaScript :</strong> لتفاعلية الموقع.</li>
                         </ul>
                     </div>
                 </div>
@@ -91,10 +101,15 @@
 </main>
     <footer class="bg-dark text-white text-center p-4 mt-5">
         <div class="container">
-            <p>&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <p data-key="footerContact">معلومات التواصل | روابط سوشيال ميديا</p>
+            <p class="mb-0" data-key="footerRights">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            <div class="mt-3">
+                <p data-key="footerParticipationTitle"><strong> صاحب المشروع :</strong></p>
+                <p data-key="footerParticipationName">رامي عكش - ramy_282954</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="assets/js/translation.js"></script>
     <script src="assets/js/main.js"></script>
